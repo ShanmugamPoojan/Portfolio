@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <title>Shanmugam Poojan</title>
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+
+        font-family: "SUSE", sans-serif;
+    }
+
+    nav{
+        /* height: 20vh; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        /* background-color: aqua; */
+    }
+
+    #logo{
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        border: 2px solid black;
+    }
+    #logo:hover{
+        cursor: default;
+    }
+    #nav-bar{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        border: 2px solid black;
+        
+    }
+    #nav-bar > div{
+        margin: 2vw;
+    }
+    #nav-bar ul{
+        height: 10vh;
+        font-size: larger;
+    
+        gap: 1rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        /* border: 2px solid black; */
+        /* justify-content: space-; */
+    }
+
+    #profile {
+        height: 500px;
+        background-color: bisque;
+    }
+
+    #projects {
+        height: 500px;
+        background-color: blueviolet;
+    }
+
+    #education {
+        height: 500px;
+        background-color: burlywood
+    }
+
+    #contact {
+        height: 500px;
+        background-color: brown;
+    }
+
+    #back-to-top {
+        display: flex;
+        height: 30px;
+
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+    }
+
+    #footer {
+        height: 100px;
+        background-color: grey;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+</style>
+
+<body>
+    <nav>
+        <div id="logo">Shanmugam Poojan</div>
+        <div id="nav-bar">
+            <!-- <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="">Contact</a></li>
+            </ul> -->
+            <div>
+                <a href="">About</a>
+            </div>
+            <div>
+                <a href="">Projects</a>
+            </div>
+            <div>
+                <a href="">Education</a>
+            </div>
+            <div>
+                <a href="">Resume</a>
+            </div>
+            <div>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        profile
+        <div id="profile"></div>
+        </div>
+    </header>
+
+    <main>
+
+        
+        <div id="projects">
+            projects
+        </div>
+
+        <div id="education">
+            education
+        </div>
+        <div id="contact">
+            contact
+        </div>
+    </main>
+
+    <footer>
+        <div id="back-to-top">
+            <a href="#">Back to top</a>
+        </div>
+
+        <div id="footer">
+            <p>Shanmugam Poojan</p>
+        </div>
+    </footer>
+</body>
+
+</html>
