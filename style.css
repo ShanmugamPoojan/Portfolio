@@ -100,26 +100,44 @@ nav {
 #header {
     display: flex;
     /* padding: 0 50px; */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* height: 500px; */
     /* background-color: bisque; */
 }
 
 #profile-pic {
-    box-sizing: border-box;
-    margin: 50px;
+    /* box-sizing: border-box; */
+    margin: 2vw;
     width: 40vw;
     border: 10px solid lightgrey;
     border-radius: 100%;
 }
-
 #discription {
     margin: auto;
     padding: 2vw;
+    width: 40vw;
     border: 10px solid lightgrey;
     font-size: large;
     border-radius: 4vw;
 }
+@media screen and (max-width: 800px) {
+    #profile{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    #profile-pic{
+        /* margin: ; */
+        width: 80vw;
+
+    }
+    #discription{
+        margin: auto;
+        width: 80vw;
+        background-color: aqua;
+    }
+}
+
 
 #projects {
     height: 500px;
