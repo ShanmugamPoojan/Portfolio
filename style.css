@@ -8,7 +8,16 @@ body {
 
     font-family: "SUSE", sans-serif;
 }
+a{
+    color: black;
+    text-transform: none;
+    text-decoration: none;
+}
 
+.border{
+    border: 10px solid lightgrey;
+    border-radius: 4vw;
+}
 /* @media screen and (max-width: 500px) {
         body{
             margin: 0 10px;
@@ -59,24 +68,24 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 
-    /* border: 2px solid black; */
-
+    
 }
 
 #nav-bar div {
-
+    
     /* margin: 2vw; */
-
+    
     padding: 1vw;
     justify-content: center;
     align-items: center;
     font-size: large;
-    border-radius: 10px
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
 #nav-bar div:hover {
-    border: 2px solid black;
-
+    border: 2px solid rgb(230, 230, 230);
+    background-color: rgb(230, 230, 230);
 }
 
 /* @media (min-width: 500px) {
@@ -96,7 +105,7 @@ nav {
     /* border: 2px solid black; */
     /* justify-content: space-; */
 }
-
+/* ************************************************ */
 #header {
     display: flex;
     /* padding: 0 50px; */
@@ -109,54 +118,70 @@ nav {
     /* box-sizing: border-box; */
     margin: 2vw;
     width: 40vw;
-    border: 10px solid lightgrey;
     border-radius: 100%;
 }
 #discription {
     margin: auto;
     padding: 2vw;
     width: 40vw;
-    border: 10px solid lightgrey;
+    font-size: large;
+}
+
+/* **************************************************** */
+#projects {
+    /* padding: 2vw; */
+    /* height: 500px;
+    background-color: blueviolet; */
+
+}
+#project-title{
+    margin: 2vw;
+    text-align: center;
+
+}
+#project-div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#project-div > div{
+    margin: auto;
+    padding: 2vw;
+    width: 20vw;
     font-size: large;
     border-radius: 4vw;
 }
-@media screen and (max-width: 800px) {
-    #profile{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-    }
-    #profile-pic{
-        /* margin: ; */
-        width: 80vw;
-
-    }
-    #discription{
-        margin: auto;
-        width: 80vw;
-        background-color: aqua;
-    }
-}
-
-
-#projects {
-    height: 500px;
-    background-color: blueviolet;
-}
 
 #education {
-    height: 500px;
-    background-color: burlywood
-}
 
+}
+#education-title{
+    margin: 2vw;
+    text-align: center;
+
+}
+#education-div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#education-div > div{
+    margin: auto;
+    padding: 2vw;
+    width: 20vw;
+    font-size: large;
+    border-radius: 4vw;
+}
 #contact {
     height: 500px;
     background-color: brown;
 }
 
+/* *******************footer ************************** */
+
 #back-to-top {
     display: flex;
-    height: 5vh;
+    height: 8vh;
 
     justify-content: center;
     align-items: center;
@@ -176,4 +201,33 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* **********************Media queries******************* */
+
+@media screen and (max-width: 800px) {
+    #profile{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    #profile-pic{
+        /* margin: ; */
+        width: 80vw;
+
+    }
+    #discription{
+        margin: auto;
+        width: 80vw;
+    }
+    #project-div > div{
+        margin: auto;
+        margin-top: 2vw;
+        width: 80vw;
+    }
+    #education-div > div{
+        margin: auto;
+        margin-top: 2vw;
+        width: 80vw;
+    }
 }
