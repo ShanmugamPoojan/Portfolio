@@ -109,15 +109,21 @@ nav {
 #header {
     display: flex;
     /* padding: 0 50px; */
+    padding-top: 10vh;
+
     flex-wrap: wrap;
     /* height: 500px; */
     /* background-color: bisque; */
 }
-
+#profile{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
 #profile-pic {
     /* box-sizing: border-box; */
     margin: 2vw;
-    width: 40vw;
+    width: 35vw;
     border-radius: 100%;
 }
 #discription {
@@ -129,9 +135,9 @@ nav {
 
 /* **************************************************** */
 #projects {
-    /* padding: 2vw; */
-    /* height: 500px;
-    background-color: blueviolet; */
+    padding: 100px 0;
+
+
 
 }
 #project-title{
@@ -154,6 +160,9 @@ nav {
 
 #education {
 
+    padding: 100px 0;
+
+
 }
 #education-title{
     margin: 2vw;
@@ -173,15 +182,32 @@ nav {
     border-radius: 4vw;
 }
 #contact {
-    height: 500px;
-    background-color: brown;
-}
+    padding: 100px 0;
 
+}
+#contact-title{
+    margin: 2vw;
+    text-align: center;
+
+}
+#contact-div{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#contact-div > div{
+    margin: auto;
+    padding: 2vw;
+    width: 20vw;
+    font-size: large;
+    border-radius: 4vw;
+}
 /* *******************footer ************************** */
 
 #back-to-top {
     display: flex;
     height: 8vh;
+    margin-top: 5vh;
 
     justify-content: center;
     align-items: center;
@@ -206,15 +232,24 @@ nav {
 /* **********************Media queries******************* */
 
 @media screen and (max-width: 800px) {
+
+    #header, #education, #projects, #contact{
+
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    #contact{
+        padding-bottom: 50px;
+    }
     #profile{
         width: 100vw;
         display: flex;
         justify-content: center;
     }
+
     #profile-pic{
         /* margin: ; */
         width: 80vw;
-
     }
     #discription{
         margin: auto;
