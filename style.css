@@ -1,0 +1,161 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "SUSE", sans-serif;
+}
+
+/* @media screen and (max-width: 500px) {
+        body{
+            margin: 0 10px;
+            padding: 0;
+        }
+        #profile-pic{
+            margin: 0;
+            padding: 0;
+            width: 50vw;
+        }
+    } */
+nav {
+    /* height: 20vh; */
+    width: 100vw;
+    background-color: white;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+
+    /* background-color: aqua; */
+}
+
+#main{
+    margin-top: 50px;
+}
+#logo {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    /* border: 2px solid black; */
+
+}
+
+#logo:hover {
+    cursor: default;
+}
+
+#nav-bar {
+    height: 10vh;
+    gap: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* border: 2px solid black; */
+
+}
+
+#nav-bar div {
+
+    /* margin: 2vw; */
+
+    padding: 1vw;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border-radius: 10px
+}
+
+#nav-bar div:hover {
+    border: 2px solid black;
+
+}
+
+/* @media (min-width: 500px) {
+        #profile{
+            background-color: black;
+        }
+    } */
+#nav-bar ul {
+    height: 10vh;
+    font-size: larger;
+
+    position: static;
+    gap: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* justify-content: space-; */
+}
+
+#header {
+    display: flex;
+    /* padding: 0 50px; */
+    /* flex-wrap: wrap; */
+    /* height: 500px; */
+    /* background-color: bisque; */
+}
+
+#profile-pic {
+    box-sizing: border-box;
+    margin: 50px;
+    width: 40vw;
+    border: 10px solid lightgrey;
+    border-radius: 100%;
+}
+
+#discription {
+    margin: auto;
+    padding: 2vw;
+    border: 10px solid lightgrey;
+    font-size: large;
+    border-radius: 4vw;
+}
+
+#projects {
+    height: 500px;
+    background-color: blueviolet;
+}
+
+#education {
+    height: 500px;
+    background-color: burlywood
+}
+
+#contact {
+    height: 500px;
+    background-color: brown;
+}
+
+#back-to-top {
+    display: flex;
+    height: 5vh;
+
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+#back-to-top:hover {
+    background-color: rgb(175, 175, 175);
+
+}
+
+#footer {
+    height: 100px;
+    color: white;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
