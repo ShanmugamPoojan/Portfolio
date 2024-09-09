@@ -16,50 +16,88 @@
     }
 
     body {
-        margin: 0px;
-        padding: 0px;
+        margin: 0 ;
+        padding: 0;
 
         font-family: "SUSE", sans-serif;
     }
-
-    nav{
+    /* @media screen and (max-width: 500px) {
+        body{
+            margin: 0 10px;
+            padding: 0;
+        }
+        #profile-pic{
+            margin: 0;
+            padding: 0;
+            width: 50vw;
+        }
+    } */
+    nav {
         /* height: 20vh; */
+        /* width: 100vw; */
+        background-color: white;
         display: flex;
+
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        
+        /* position: absolute; */
+
         /* background-color: aqua; */
     }
 
-    #logo{
+    #logo {
         height: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: xx-large;
         font-weight: bolder;
-        border: 2px solid black;
+        /* border: 2px solid black; */
+
     }
-    #logo:hover{
+
+    #logo:hover {
         cursor: default;
     }
-    #nav-bar{
+
+    #nav-bar {
         height: 10vh;
+        gap: 2vw;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        
+
+        /* border: 2px solid black; */
+
+    }
+
+    #nav-bar div {
+
+        /* margin: 2vw; */
+
+        padding: 1vw;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        border-radius: 10px
+    }
+
+    #nav-bar div:hover {
         border: 2px solid black;
-        
+
     }
-    #nav-bar > div{
-        margin: 2vw;
-    }
-    #nav-bar ul{
+
+    /* @media (min-width: 500px) {
+        #profile{
+            background-color: black;
+        }
+    } */
+    #nav-bar ul {
         height: 10vh;
         font-size: larger;
-    
+
+        position: static;
         gap: 1rem;
         list-style: none;
         display: flex;
@@ -68,9 +106,28 @@
         /* justify-content: space-; */
     }
 
-    #profile {
-        height: 500px;
-        background-color: bisque;
+    #header {
+        display: flex;
+        /* padding: 0 50px; */
+        /* flex-wrap: wrap; */
+        /* height: 500px; */
+        /* background-color: bisque; */
+    }
+
+    #profile-pic {
+        box-sizing: border-box;
+        margin: 50px;
+        width: 40vw;
+        border: 10px solid lightgrey;
+        border-radius: 100%;
+    }
+
+    #discription {
+        margin: auto;
+        padding: 2vw;
+        border: 10px solid lightgrey;
+        font-size: large;
+        border-radius: 4vw;
     }
 
     #projects {
@@ -90,27 +147,34 @@
 
     #back-to-top {
         display: flex;
-        height: 30px;
+        height: 5vh;
 
         justify-content: center;
         align-items: center;
         background-color: lightgray;
     }
 
+    #back-to-top:hover {
+        background-color: rgb(175, 175, 175);
+
+    }
+
     #footer {
         height: 100px;
-        background-color: grey;
+        color: white;
+        background-color: black;
 
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
 </style>
 
 <body>
     <nav>
-        <div id="logo">Shanmugam Poojan</div>
+        <div id="logo">
+            Shanmugam Poojan
+        </div>
         <div id="nav-bar">
             <!-- <ul>
                 <li><a href="">About</a></li>
@@ -119,51 +183,75 @@
                 <li><a href="">Resume</a></li>
                 <li><a href="">Contact</a></li>
             </ul> -->
-            <div>
-                <a href="">About</a>
-            </div>
-            <div>
-                <a href="">Projects</a>
-            </div>
-            <div>
-                <a href="">Education</a>
-            </div>
-            <div>
-                <a href="">Resume</a>
-            </div>
-            <div>
-                <a href="">Contact</a>
-            </div>
+
+            <a href="">
+                <div>
+                    About
+                </div>
+            </a>
+            <a href="">
+                <div>
+                    Projects
+                </div>
+            </a>
+            <a href="">
+                <div>
+                    Education
+                </div>
+            </a>
+            <!-- <a href="">
+                <div>
+                    Resume
+                </div>
+            </a> -->
+            <a href="">
+                <div>
+                    Contact
+                </div>
+            </a>
+
         </div>
     </nav>
-    <header>
-        profile
-        <div id="profile"></div>
-        </div>
+    <header id="header">
+        <section id="profile">
+            <img src="profile-pic.JPG" alt="profile-pic" id="profile-pic">
+        </section>
+        <article id="discription">
+            <h2>About me</h2>
+            <p>Pursuing Computer Applications at JSS Science and Technology University, with a strong background in
+                programming and software development. Good knowledge in Python, Java, and SQL, with practical experience
+                from college projects and self study. <br>
+                Eager to learn and ready to contribute to a team with my technical
+                skills and problem-solving abilities.</p>
+
+            <button>My Resume</button>
+            <button>My CV</button>
+        </article>
     </header>
 
     <main>
 
-        
-        <div id="projects">
+        <section id="projects">
             projects
-        </div>
+        </section>
 
-        <div id="education">
+        <section id="education">
             education
-        </div>
-        <div id="contact">
+        </section>
+        <section id="contact">
             contact
-        </div>
+        </section>
     </main>
 
     <footer>
-        <div id="back-to-top">
-            <a href="#">Back to top</a>
-        </div>
+        <a href="#">
+            <div id="back-to-top">
+                Back to top
+            </div>
+        </a>
 
         <div id="footer">
-            <p>Shanmugam Poojan</p>
+            <p>Shanmugam Poojan :)</p>
         </div>
     </footer>
 </body>
