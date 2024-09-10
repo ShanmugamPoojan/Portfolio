@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    /* transition-duration: 0.5ms; */
 }
 
 body {
@@ -8,29 +9,22 @@ body {
 
     font-family: "SUSE", sans-serif;
 }
-a{
+
+a {
     color: black;
     text-transform: none;
     text-decoration: none;
 }
 
-.border{
+.border {
     border: 10px solid lightgrey;
     border-radius: 4vw;
+
+    box-shadow: 0 0 20px 10px lightgray;
+
 }
-/* @media screen and (max-width: 500px) {
-        body{
-            margin: 0 10px;
-            padding: 0;
-        }
-        #profile-pic{
-            margin: 0;
-            padding: 0;
-            width: 50vw;
-        }
-    } */
+
 nav {
-    /* height: 20vh; */
     width: 100vw;
     background-color: white;
     display: flex;
@@ -39,13 +33,12 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     position: fixed;
-
-    /* background-color: aqua; */
 }
 
-#main{
+#main {
     margin-top: 50px;
 }
+
 #logo {
     height: 10vh;
     display: flex;
@@ -53,7 +46,6 @@ nav {
     align-items: center;
     font-size: xx-large;
     font-weight: bolder;
-    /* border: 2px solid black; */
 
 }
 
@@ -68,13 +60,10 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 
-    
 }
 
 #nav-bar div {
-    
-    /* margin: 2vw; */
-    
+
     padding: 1vw;
     justify-content: center;
     align-items: center;
@@ -88,12 +77,7 @@ nav {
     background-color: rgb(230, 230, 230);
 }
 
-/* @media (min-width: 500px) {
-        #profile{
-            background-color: black;
-        }
-    } */
-#nav-bar ul {
+/* #nav-bar ul {
     height: 10vh;
     font-size: larger;
 
@@ -102,112 +86,150 @@ nav {
     list-style: none;
     display: flex;
     align-items: center;
-    /* border: 2px solid black; */
-    /* justify-content: space-; */
-}
-/* ************************************************ */
+} */
+
+/* *********************Header *************************** */
 #header {
     display: flex;
-    /* padding: 0 50px; */
     padding-top: 10vh;
 
     flex-wrap: wrap;
-    /* height: 500px; */
-    /* background-color: bisque; */
 }
-#profile{
+
+#profile {
     width: 50vw;
     display: flex;
     justify-content: center;
 }
+
 #profile-pic {
-    /* box-sizing: border-box; */
     margin: 2vw;
     width: 35vw;
+    border: none;
     border-radius: 100%;
 }
+
 #discription {
     margin: auto;
     padding: 2vw;
     width: 40vw;
     font-size: large;
-}
+    border: none;
 
-/* **************************************************** */
+
+    box-shadow: 10px black;
+}
+#discription > button{
+    border: none;
+    height: 30px;
+    width: 100px;
+    font-size: small;
+    /* color: white; */
+    font-weight: bolder;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+#discription > button:hover{
+    background-color: rgb(185, 184, 184);
+
+}
+/* ***********************Main***************************** */
 #projects {
     padding: 100px 0;
-
-
-
 }
-#project-title{
+
+#project-title {
     margin: 2vw;
+    padding: 2vw;
+
     text-align: center;
+    border: none;
 
 }
-#project-div{
+
+#project-div {
     display: flex;
     flex-wrap: wrap;
+    padding: 2vh;
 
 }
-#project-div > div{
+
+#project-div>div {
     margin: auto;
     padding: 2vw;
     width: 20vw;
     font-size: large;
     border-radius: 4vw;
+
+    box-shadow: none;
 }
 
 #education {
 
     padding: 100px 0;
 
-
 }
-#education-title{
+
+#education-title {
     margin: 2vw;
+    padding: 2vw;
+
     text-align: center;
+    border: none;
 
 }
-#education-div{
+
+#education-div {
     display: flex;
     flex-wrap: wrap;
 
 }
-#education-div > div{
+
+#education-div>div {
     margin: auto;
     padding: 2vw;
     width: 20vw;
     font-size: large;
     border-radius: 4vw;
+    box-shadow: none;
 }
+
 #contact {
     padding: 100px 0;
 
 }
-#contact-title{
+
+#contact-title {
     margin: 2vw;
+    padding: 2vw;
+
     text-align: center;
+    border: none;
 
 }
-#contact-div{
+
+#contact-div {
     display: flex;
     flex-wrap: wrap;
-
+    
 }
-#contact-div > div{
+
+#contact-div>div {
     margin: auto;
     padding: 2vw;
     width: 20vw;
     font-size: large;
     border-radius: 4vw;
+    box-shadow: none;
+    text-align: center;
 }
+
 /* *******************footer ************************** */
 
 #back-to-top {
     display: flex;
     height: 8vh;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
 
     justify-content: center;
     align-items: center;
@@ -233,36 +255,59 @@ nav {
 
 @media screen and (max-width: 800px) {
 
-    #header, #education, #projects, #contact{
+    #header,
+    #education,
+    #projects,
+    #contact {
 
-        padding-top: 150px;
+        padding-top: 100px;
         padding-bottom: 100px;
     }
-    #contact{
-        padding-bottom: 50px;
+
+    #contact {
+        /* padding-bottom: 50px; */
     }
-    #profile{
+
+    #profile {
         width: 100vw;
         display: flex;
         justify-content: center;
     }
 
-    #profile-pic{
-        /* margin: ; */
+    /* #profile-pic {
+        margin-bottom: 50px ;
         width: 80vw;
-    }
-    #discription{
+    } */
+
+    /* #discription {
         margin: auto;
         width: 80vw;
     }
-    #project-div > div{
+
+    #project-div>div {
+        margin: auto;
+        margin-top: 2vw;
+        width: 80vw;
+    }
+
+    #education-div>div {
         margin: auto;
         margin-top: 2vw;
         width: 80vw;
-    }
-    #education-div > div{
+    } */
+    /* #contact-div > div{
+        margin-top: 10vw;
+
+        width: 80vw;
+    }  */
+
+    #profile-pic, 
+    #discription,
+    #project-div>div, 
+    #education-div>div,
+    #contact-div > div{
         margin: auto;
-        margin-top: 2vw;
+        margin-top: 10vw;
         width: 80vw;
     }
 }
