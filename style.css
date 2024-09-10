@@ -18,7 +18,7 @@ a {
 
 .border {
     border-radius: 4vw;
-    border: 10px solid lightgrey;
+    border: 2px solid lightgrey;
 
     box-shadow: 0 0 20px 10px lightgray;
 
@@ -144,7 +144,31 @@ nav {
 
     box-shadow: none;
 }
+.container > div:hover{
+    
+    box-shadow:  0 0 20px 10px lightgray;
+}
 
+.smore{
+    padding: auto;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smore > div{
+    padding: 1vw;
+    width: 50vw;
+
+    background-color: darkgray;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+}
+    .smore > div:hover{
+        background-color: rgb(126, 126, 126);
+    }
 /* *******************footer ************************** */
 
 #back-to-top {
