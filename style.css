@@ -145,7 +145,7 @@ nav {
     box-shadow: none;
 }
 .container > div:hover{
-    
+
     box-shadow:  0 0 20px 10px lightgray;
 }
 
@@ -169,6 +169,10 @@ nav {
     .smore > div:hover{
         background-color: rgb(126, 126, 126);
     }
+
+#contact-div > div > a:hover{
+    text-decoration: underline;
+}
 /* *******************footer ************************** */
 
 #back-to-top {
