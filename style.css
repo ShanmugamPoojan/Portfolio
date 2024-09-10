@@ -17,8 +17,8 @@ a {
 }
 
 .border {
-    border: 10px solid lightgrey;
     border-radius: 4vw;
+    border: 10px solid lightgrey;
 
     box-shadow: 0 0 20px 10px lightgray;
 
@@ -27,55 +27,42 @@ a {
 nav {
     width: 100vw;
     background-color: white;
+    
     display: flex;
-
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     position: fixed;
-}
+    }
+    #logo {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+    #logo:hover {
+        cursor: default;
+    }
 
-#main {
-    margin-top: 50px;
-}
-
-#logo {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-    font-weight: bolder;
-
-}
-
-#logo:hover {
-    cursor: default;
-}
-
-#nav-bar {
-    height: 10vh;
-    gap: 2vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-#nav-bar div {
-
-    padding: 1vw;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    border-radius: 10px;
-    border: 2px solid white;
-}
-
-#nav-bar div:hover {
-    border: 2px solid rgb(230, 230, 230);
-    background-color: rgb(230, 230, 230);
-}
+    #nav-bar {
+        height: 10vh;
+        gap: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+        #nav-bar div {
+            padding: 1vw;
+            font-size: large;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+        #nav-bar div:hover {
+            border: 2px solid rgb(230, 230, 230);
+            background-color: rgb(230, 230, 230);
+        }
 
 /* #nav-bar ul {
     height: 10vh;
@@ -95,66 +82,60 @@ nav {
 
     flex-wrap: wrap;
 }
+    #profile {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+        #profile-pic {
+            margin: 2vw;
+            width: 35vw;
+            border: none;
+            border-radius: 100%;
+        }
 
-#profile {
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-}
+    #discription {
+        margin: auto;
+        padding: 2vw;
+        width: 40vw;
+        font-size: large;
+        border: none;
+        box-shadow: 10px black;
+    }
+        #discription > button{
+            border: none;
+            height: 30px;
+            width: 100px;
+            font-size: small;
+            /* color: white; */
+            font-weight: bolder;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+        #discription > button:hover{
+            background-color: rgb(185, 184, 184);
 
-#profile-pic {
-    margin: 2vw;
-    width: 35vw;
-    border: none;
-    border-radius: 100%;
-}
-
-#discription {
-    margin: auto;
-    padding: 2vw;
-    width: 40vw;
-    font-size: large;
-    border: none;
-
-
-    box-shadow: 10px black;
-}
-#discription > button{
-    border: none;
-    height: 30px;
-    width: 100px;
-    font-size: small;
-    /* color: white; */
-    font-weight: bolder;
-    background-color: lightgray;
-    border-radius: 10px;
-}
-#discription > button:hover{
-    background-color: rgb(185, 184, 184);
-
-}
+        }
 /* ***********************Main***************************** */
-#projects {
+#projects, #education, #contact {
     padding: 100px 0;
 }
 
-#project-title {
+.sub-title{
     margin: 2vw;
-    padding: 2vw;
+    padding: 1vw;
 
     text-align: center;
     border: none;
-
 }
 
-#project-div {
+.container{
     display: flex;
     flex-wrap: wrap;
     padding: 2vh;
-
 }
 
-#project-div>div {
+.container > div{
     margin: auto;
     padding: 2vw;
     width: 20vw;
@@ -162,66 +143,6 @@ nav {
     border-radius: 4vw;
 
     box-shadow: none;
-}
-
-#education {
-
-    padding: 100px 0;
-
-}
-
-#education-title {
-    margin: 2vw;
-    padding: 2vw;
-
-    text-align: center;
-    border: none;
-
-}
-
-#education-div {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-#education-div>div {
-    margin: auto;
-    padding: 2vw;
-    width: 20vw;
-    font-size: large;
-    border-radius: 4vw;
-    box-shadow: none;
-}
-
-#contact {
-    padding: 100px 0;
-
-}
-
-#contact-title {
-    margin: 2vw;
-    padding: 2vw;
-
-    text-align: center;
-    border: none;
-
-}
-
-#contact-div {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-#contact-div>div {
-    margin: auto;
-    padding: 2vw;
-    width: 20vw;
-    font-size: large;
-    border-radius: 4vw;
-    box-shadow: none;
-    text-align: center;
 }
 
 /* *******************footer ************************** */
@@ -235,11 +156,10 @@ nav {
     align-items: center;
     background-color: lightgray;
 }
+    #back-to-top:hover {
+        background-color: rgb(175, 175, 175);
 
-#back-to-top:hover {
-    background-color: rgb(175, 175, 175);
-
-}
+    }
 
 #footer {
     height: 100px;
@@ -264,42 +184,11 @@ nav {
         padding-bottom: 100px;
     }
 
-    #contact {
-        /* padding-bottom: 50px; */
-    }
-
     #profile {
         width: 100vw;
         display: flex;
         justify-content: center;
     }
-
-    /* #profile-pic {
-        margin-bottom: 50px ;
-        width: 80vw;
-    } */
-
-    /* #discription {
-        margin: auto;
-        width: 80vw;
-    }
-
-    #project-div>div {
-        margin: auto;
-        margin-top: 2vw;
-        width: 80vw;
-    }
-
-    #education-div>div {
-        margin: auto;
-        margin-top: 2vw;
-        width: 80vw;
-    } */
-    /* #contact-div > div{
-        margin-top: 10vw;
-
-        width: 80vw;
-    }  */
 
     #profile-pic, 
     #discription,
