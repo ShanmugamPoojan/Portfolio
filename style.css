@@ -205,10 +205,6 @@ nav {
 
 @media screen and (max-width: 800px) {
 
-    #nav-bar{
-        /* position: sticky;
-        top: 0; */
-    }
     #header,
     #education,
     #projects,
