@@ -161,14 +161,15 @@ nav {
     padding: 1vw;
     width: 50vw;
 
-    background-color: darkgray;
+    background-color: lightgray;
+    border-radius: 10px;
     text-align: center;
     font-size: large;
     font-weight: bold;
     border: none;
 }
     .smore > div:hover{
-        background-color: rgb(126, 126, 126);
+        background-color: gray;
     }
 
 #contact-div > div a:hover{
