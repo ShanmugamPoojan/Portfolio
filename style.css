@@ -225,7 +225,7 @@ nav {
     #projects,
     #contact {
 
-        padding-top: 120px;
+        padding-top: 130px;
         /* padding-bottom: 100px; */
     }
 
@@ -235,6 +235,9 @@ nav {
         justify-content: center;
     }
 
+    #discription ,.container > div{
+        padding: 4vw;
+    }
     #profile-pic, 
     #discription,
     #project-div>div, 
