@@ -32,7 +32,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    position: sticky;
+    position: fixed;
     top: 0;
     }
     #logo {
@@ -133,11 +133,11 @@ nav {
 .container{
     display: flex;
     flex-wrap: wrap;
-    padding: 2vh;
+    /* padding: 2vw; */
 }
 
 .container > div{
-    margin: auto;
+    margin: 4vw;
     padding: 2vw;
     width: 20vw;
     font-size: large;
@@ -146,8 +146,15 @@ nav {
     box-shadow: none;
 }
 .container > div:hover{
-    cursor: default;
+    /* cursor:none; */
     box-shadow:  0 0 20px 10px lightgray;
+}
+.image{
+    margin: auto;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 5px;
+    /* border: 2px solid black; */
 }
 
 .smore{
@@ -172,8 +179,16 @@ nav {
         background-color: gray;
     }
 
+#contact-div > div{
+    margin: auto;
+}
 #contact-div > div a:hover{
     text-decoration: underline;
+}
+
+.container > div:active, #nav-bar > div:active, .smore > div:active{
+    
+    border-color: aqua;
 }
 /* *******************footer ************************** */
 
@@ -203,15 +218,15 @@ nav {
 
 /* **********************Media queries******************* */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
 
     #header,
     #education,
     #projects,
     #contact {
 
-        padding-top: 0;
-        padding-bottom: 100px;
+        padding-top: 120px;
+        /* padding-bottom: 100px; */
     }
 
     #profile {
@@ -228,5 +243,12 @@ nav {
         margin: auto;
         margin-top: 10vw;
         width: 80vw;
+    }
+
+    .image{
+        margin: 0 10vw;
+        width: 60vw;
+        height: 20vh;
+        /* border: 2px solid black; */
     }
 }
