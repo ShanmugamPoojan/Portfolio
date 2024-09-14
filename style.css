@@ -65,6 +65,10 @@ nav {
             background-color: rgb(230, 230, 230);
         }
 
+    .icon{
+        margin: 0 5px;
+        width: 18px;
+    }
 /* #nav-bar ul {
     height: 10vh;
     font-size: larger;
@@ -182,6 +186,7 @@ nav {
 #contact-div > div{
     margin: auto;
 }
+
 #contact-div > div a:hover{
     text-decoration: underline;
 }
